@@ -1,16 +1,20 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const MiniStory = ({ id, image, title }) => {
   return (
-    <a href={`/story/${id}`}>
+    <Link href={`/story/${id}`}>
       <Wrapper>
         <Image alt={image.alt} src={image.src} />
         <Title>{title}</Title>
       </Wrapper>
-    </a>
+    </Link>
   );
 };
+
+const Link = styled.a`
+  min-width: 200px;
+`;
 
 const Wrapper = styled.article`
   display: flex;

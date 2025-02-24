@@ -56,7 +56,7 @@ const SuperHeader = styled.div`
   background: var(--color-gray-900);
   color: white;
 
-  @media ${QUERIES.tabletAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     display: none;
   }
 `;
@@ -64,7 +64,7 @@ const SuperHeader = styled.div`
 const DesktopHeader = styled.div`
   display: none;
 
-  @media ${QUERIES.tabletAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     display: revert;
   }
 `;
